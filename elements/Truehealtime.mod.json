@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "truehealtime",
+    "description": "Add to the True Healing environment time by ticks, default 200, cannot be negative.",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 200
+  }
+}

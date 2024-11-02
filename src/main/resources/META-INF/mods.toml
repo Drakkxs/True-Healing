@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Public Domain"
+
+[[mods]]
+modId="trueheal"
+version="1.0.4"
+displayName="True Healing"
+updateJSONURL="https://github.com/DRAKKKS/True-Healing/blob/master/update.json"
+displayURL="https://github.com/DRAKKKS/True-Healing.git"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Drakkks, MCreator"
+description="Mobs heal after they're hurt using a custom potion effect."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.trueheal]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

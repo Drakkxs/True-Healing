@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "True Healing",
+    "icon": "pixel-21-512-4081774057",
+    "color": {
+      "value": -400581,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "onActiveTick": {
+      "name": "TrueHealOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "TrueHealActiveTickCondition"
+    }
+  }
+}
