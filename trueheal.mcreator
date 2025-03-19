@@ -111,6 +111,17 @@
         "files": [],
         "type": "number"
       }
+    },
+    {
+      "name": "Truehealcd",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truehealcd",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [],
@@ -121,11 +132,13 @@
     "en_us": {
       "gamerule.truehealtime": "truehealtime",
       "gamerule.truehealdelay": "truehealdelay",
-      "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
+      "gamerule.truehealcd": "truehealcd",
       "effect.trueheal.true_heal": "True Healing",
-      "gamerule.truehealamp": "truehealamp",
       "effect.healing_mobs.true_heal": "True_Healing",
       "gamerule.truehealdelay.description": "Add to the True Healing is delayed before being applied in ticks, default 100 for 5 seconds, cannot be negative. Twenty ticks is one second. ..",
+      "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
+      "gamerule.truehealamp": "truehealamp",
+      "gamerule.truehealcd.description": "When damaged, loses healing. Default True.",
       "gamerule.truehealtime.description": "Add to the True Healing environment time by ticks, default 200, cannot be negative."
     }
   },
@@ -136,13 +149,14 @@
   "workspaceSettings": {
     "modid": "trueheal",
     "modName": "True Healing",
-    "version": "1.0.4",
+    "version": "2.0.0-47.3.0",
     "description": "Mobs heal after they\u0027re hurt using a custom potion effect.",
     "author": "Drakkks, MCreator",
     "websiteURL": "https://github.com/DRAKKKS/True-Healing.git",
     "license": "Public Domain",
     "serverSideOnly": false,
     "updateURL": "https://github.com/DRAKKKS/True-Healing/blob/master/update.json",
+    "modPicture": "forbiddenhealth_hd_art",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -151,5 +165,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.trueheal"
   },
-  "mcreatorVersion": 202400342716
+  "mcreatorVersion": 202400452410
 }

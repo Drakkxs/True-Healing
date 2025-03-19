@@ -1,10 +1,12 @@
 {
   "gamerule.truehealtime": "truehealtime",
   "gamerule.truehealdelay": "truehealdelay",
-  "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
+  "gamerule.truehealcd": "truehealcd",
   "effect.trueheal.true_heal": "True Healing",
-  "gamerule.truehealamp": "truehealamp",
   "effect.healing_mobs.true_heal": "True_Healing",
   "gamerule.truehealdelay.description": "Add to the True Healing is delayed before being applied in ticks, default 100 for 5 seconds, cannot be negative. Twenty ticks is one second. ..",
+  "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
+  "gamerule.truehealamp": "truehealamp",
+  "gamerule.truehealcd.description": "When damaged, loses healing. Default True.",
   "gamerule.truehealtime.description": "Add to the True Healing environment time by ticks, default 200, cannot be negative."
 }
