@@ -4,10 +4,11 @@ license="Public Domain"
 
 [[mods]]
 modId="trueheal"
-version="1.0.4"
+version="2.0.047.3.0"
 displayName="True Healing"
 updateJSONURL="https://github.com/DRAKKKS/True-Healing/blob/master/update.json"
 displayURL="https://github.com/DRAKKKS/True-Healing.git"
+logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Drakkks, MCreator"
 description="Mobs heal after they're hurt using a custom potion effect."

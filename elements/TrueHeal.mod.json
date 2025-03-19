@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "True Healing",
@@ -15,6 +15,7 @@
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onActiveTick": {
       "name": "TrueHealOnEffectActiveTick"
     },
