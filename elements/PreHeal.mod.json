@@ -2,16 +2,16 @@
   "_fv": 73,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "True Healing",
-    "icon": "true_heal",
+    "effectName": "Delayed Blessing",
+    "icon": "pre_heal",
     "color": {
-      "value": -400581,
+      "value": -6348254,
       "falpha": 0.0
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
-    "renderStatusInInventory": false,
-    "renderStatusInHUD": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,

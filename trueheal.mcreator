@@ -122,6 +122,18 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "PreHeal",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trueheal/potion/PreHealMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -136,6 +148,7 @@
       "gamerule.truehealcd": "truehealcd",
       "effect.trueheal.true_heal": "True Healing",
       "gamerule.truehealamp": "truehealamp",
+      "effect.trueheal.pre_heal": "Delayed Blessing",
       "effect.healing_mobs.true_heal": "True_Healing",
       "gamerule.truehealdelay.description": "Add to the True Healing is delayed before being applied in ticks, default 100 for 5 seconds, cannot be negative. Twenty ticks is one second. ..",
       "gamerule.truehealcd.description": "When damaged, loses healing. Default True.",
