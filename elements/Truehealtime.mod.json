@@ -4,7 +4,7 @@
   "definition": {
     "type": "Number",
     "displayName": "truehealtime",
-    "description": "Add to the True Healing environment time by ticks, default 200, cannot be negative.",
+    "description": "Extra time in ticks added onto the duration of the true heal effect. Default: 200.",
     "category": "MOBS",
     "defaultValueLogic": false,
     "defaultValueNumber": 200

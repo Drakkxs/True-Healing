@@ -2,12 +2,12 @@
 package net.mcreator.trueheal.potion;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import net.mcreator.trueheal.procedures.TrueHealOnEffectActiveTickProcedure;
-import net.mcreator.trueheal.procedures.TrueHealActiveTickConditionProcedure;
+import net.mcreator.trueheal.procedures.TrueHealEffectApplyProcedure;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,12 +24,13 @@ public class PreHealMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		TrueHealOnEffectActiveTickProcedure.execute(entity, amplifier);
+	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		super.removeAttributeModifiers(entity, attributeMap, amplifier);
+		TrueHealEffectApplyProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return TrueHealActiveTickConditionProcedure.execute(amplifier, duration);
+		return true;
 	}
 }

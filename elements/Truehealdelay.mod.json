@@ -4,7 +4,7 @@
   "definition": {
     "type": "Number",
     "displayName": "truehealdelay",
-    "description": "Add to the True Healing is delayed before being applied in ticks, default 100 for 5 seconds, cannot be negative. Twenty ticks is one second. ..",
+    "description": "Sets the duration of the pre_healing effect in ticks. Default: 100.",
     "category": "MOBS",
     "defaultValueLogic": false,
     "defaultValueNumber": 100

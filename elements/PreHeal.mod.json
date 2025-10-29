@@ -16,11 +16,8 @@
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onActiveTick": {
-      "name": "TrueHealOnEffectActiveTick"
-    },
-    "activeTickCondition": {
-      "name": "TrueHealActiveTickCondition"
+    "onExpired": {
+      "name": "TrueHealEffectApply"
     }
   }
 }
