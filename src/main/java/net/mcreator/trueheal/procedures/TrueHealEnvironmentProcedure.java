@@ -8,6 +8,7 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.trueheal.init.TruehealModMobEffects;
 import net.mcreator.trueheal.init.TruehealModGameRules;
@@ -36,6 +37,9 @@ public class TrueHealEnvironmentProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(TruehealModMobEffects.PRE_HEAL.get());
 		}
-		TrueHealEffectApplyProcedure.execute(world, entity);
+		if (TrueHealEntityValidationProcedure.execute(entity)) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL.get(), (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, false, false));
+		}
 	}
 }
