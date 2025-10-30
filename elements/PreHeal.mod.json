@@ -16,8 +16,11 @@
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
     "modifiers": [],
+    "onActiveTick": {
+      "name": "PreHealOnEffectActiveTick"
+    },
     "onExpired": {
-      "name": "TrueHealEffectApply"
+      "name": "PreHealEffectExpires"
     }
   }
 }

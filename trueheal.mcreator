@@ -73,10 +73,6 @@
             "type": "entity"
           },
           {
-            "name": "isUnique",
-            "type": "logic"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -146,7 +142,6 @@
       "locked_code": false,
       "registry_name": "true_heal_effect_apply",
       "metadata": {
-        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/trueheal/procedures/TrueHealEffectApplyProcedure.java"
         ],
@@ -156,14 +151,11 @@
             "type": "entity"
           },
           {
-            "name": "isUnique",
-            "type": "logic"
-          },
-          {
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "logic"
       }
     },
     {
@@ -181,10 +173,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "isUnique",
-            "type": "logic"
           },
           {
             "name": "world",
@@ -208,10 +196,46 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PreHealOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_heal_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/PreHealOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PreHealEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_heal_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/PreHealEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "isUnique",
-            "type": "logic"
+            "name": "world",
+            "type": "world"
           }
         ]
       }

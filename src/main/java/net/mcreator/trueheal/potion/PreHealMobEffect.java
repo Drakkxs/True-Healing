@@ -7,7 +7,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import net.mcreator.trueheal.procedures.TrueHealEffectApplyProcedure;
+import net.mcreator.trueheal.procedures.PreHealOnEffectActiveTickProcedure;
+import net.mcreator.trueheal.procedures.PreHealEffectExpiresProcedure;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,9 +25,14 @@ public class PreHealMobEffect extends MobEffect {
 	}
 
 	@Override
+	public void applyEffectTick(LivingEntity entity, int amplifier) {
+		PreHealOnEffectActiveTickProcedure.execute(entity);
+	}
+
+	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		TrueHealEffectApplyProcedure.execute(entity.level(), entity);
+		PreHealEffectExpiresProcedure.execute(entity.level(), entity);
 	}
 
 	@Override

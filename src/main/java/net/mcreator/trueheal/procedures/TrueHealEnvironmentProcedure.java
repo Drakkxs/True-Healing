@@ -23,11 +23,11 @@ public class TrueHealEnvironmentProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity, boolean isUnique) {
-		execute(null, world, entity, isUnique);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, boolean isUnique) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(TruehealModGameRules.TRUEHEALCD)) {
@@ -36,6 +36,6 @@ public class TrueHealEnvironmentProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(TruehealModMobEffects.PRE_HEAL.get());
 		}
-		TrueHealEffectApplyProcedure.execute(world, entity, isUnique);
+		TrueHealEffectApplyProcedure.execute(world, entity);
 	}
 }
