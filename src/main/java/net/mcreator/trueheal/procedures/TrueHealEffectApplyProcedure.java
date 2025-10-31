@@ -12,16 +12,14 @@ public class TrueHealEffectApplyProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.PRE_HEAL.get())) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.PRE_HEAL)) {
 			return false;
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
+			assert Boolean.TRUE; //#dbg:TrueHealEffectApply:marker1
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(
-						new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(),
-								(int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) * 20
-										+ Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALTIME)), 0)),
-								(int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALAMP)), 0), false, false));
+				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL, (int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) * 20
+						+ Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALTIME)), 0)), (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALAMP)), 0), true, true));
 			return true;
 		}
 		return false;

@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "potioneffect",
   "definition": {
     "effectName": "True Healing",
@@ -8,12 +8,13 @@
       "value": -400581,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
-    "renderStatusInInventory": false,
-    "renderStatusInHUD": false,
-    "isCuredByMilk": false,
-    "isProtectedByTotem": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onActiveTick": {

@@ -1,7 +1,8 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "procedure",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"43\" y=\"72\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityPlayer</field><value name=\"compareTo\"><block type=\"entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></statement><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></xml>"
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"43\" y=\"72\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"debug_marker\"><field name=\"NAME\">validation</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityPlayer</field><value name=\"compareTo\"><block type=\"entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></statement><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></next></block></xml>",
+    "skipDependencyNullCheck": false
   }
 }

@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy",
+        "order": 0
+      },
+      "projectName": "trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy",
+        "order": 1
+      },
+      "projectName": "trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%E:\\Cabinet\\Modding\\Projects\\TrueHealVersion2\\trueheal-2.0.0-47.3.0-forge-1.20.1 - Copy\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

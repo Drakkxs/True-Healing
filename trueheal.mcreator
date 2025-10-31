@@ -260,6 +260,15 @@
       "gamerule.truehealtime.description": "Extra time in ticks added onto the duration of the true heal effect. Default: 200."
     }
   },
+  "metadata": {
+    "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/trueheal/TruehealMod.java",
+      "src/main/java/net/mcreator/trueheal/init/TruehealModGameRules.java",
+      "src/main/java/net/mcreator/trueheal/init/TruehealModMobEffects.java"
+    ]
+  },
   "foldersRoot": {
     "name": "~",
     "children": []
@@ -279,9 +288,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.trueheal"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500228610
 }

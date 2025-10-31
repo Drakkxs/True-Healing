@@ -1,9 +1,9 @@
 package net.mcreator.trueheal.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,11 +15,11 @@ import net.mcreator.trueheal.init.TruehealModGameRules;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class TrueHealEnvironmentProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingHurtEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity());
 		}
 	}
@@ -33,13 +33,14 @@ public class TrueHealEnvironmentProcedure {
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(TruehealModGameRules.TRUEHEALCD)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(TruehealModMobEffects.PRE_HEAL.get());
+				_entity.removeEffect(TruehealModMobEffects.PRE_HEAL);
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(TruehealModMobEffects.TRUE_HEAL.get());
+				_entity.removeEffect(TruehealModMobEffects.TRUE_HEAL);
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
+			assert Boolean.TRUE; //#dbg:TrueHealEnvironment:called
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL.get(), (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, false, false));
+				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL, (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, true, true));
 		}
 	}
 }
