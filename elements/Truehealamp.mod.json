@@ -4,9 +4,9 @@
   "definition": {
     "type": "Number",
     "displayName": "truehealamp",
-    "description": "Sets the amplifier of the true heal effect. Default: 0",
+    "description": "Sets the amplifier of the true heal effect. Zero will disable it. Default: 1",
     "category": "MOBS",
     "defaultValueLogic": false,
-    "defaultValueNumber": 0
+    "defaultValueNumber": 1
   }
 }

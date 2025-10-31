@@ -249,7 +249,7 @@
     "en_us": {
       "gamerule.truehealtime": "truehealtime",
       "gamerule.truehealdelay": "truehealdelay",
-      "gamerule.truehealamp.description": "Sets the amplifier of the true heal effect. Default: 0",
+      "gamerule.truehealamp.description": "Sets the amplifier of the true heal effect. Zero will disable it. Default: 1",
       "gamerule.truehealcd": "truehealcd",
       "effect.trueheal.true_heal": "True Healing",
       "gamerule.truehealamp": "truehealamp",
