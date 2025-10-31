@@ -38,7 +38,6 @@ public class TrueHealEnvironmentProcedure {
 				_entity.removeEffect(TruehealModMobEffects.TRUE_HEAL);
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
-			assert Boolean.TRUE; //#dbg:TrueHealEnvironment:called
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL, (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, true, true));
 		}

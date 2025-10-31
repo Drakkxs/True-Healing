@@ -7,7 +7,6 @@ public class TrueHealEntityValidationProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		assert Boolean.TRUE; //#dbg:TrueHealEntityValidation:validation
 		if (entity instanceof Player) {
 			return false;
 		}
