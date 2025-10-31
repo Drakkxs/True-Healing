@@ -12,6 +12,9 @@ public class TrueHealEffectApplyProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return false;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.PRE_HEAL.get())) {
+			return false;
+		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(
