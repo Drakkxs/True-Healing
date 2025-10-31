@@ -34,8 +34,6 @@ public class TrueHealEnvironmentProcedure {
 		if (world.getLevelData().getGameRules().getBoolean(TruehealModGameRules.TRUEHEALCD)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(TruehealModMobEffects.TRUE_HEAL.get());
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(TruehealModMobEffects.PRE_HEAL.get());
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
