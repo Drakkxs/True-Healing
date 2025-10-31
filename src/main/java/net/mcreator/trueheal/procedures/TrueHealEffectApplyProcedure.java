@@ -12,7 +12,7 @@ public class TrueHealEffectApplyProcedure {
 	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.PRE_HEAL.get())) {
+		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TruehealModMobEffects.PRE_HEAL.get()) ? _livEnt.getEffect(TruehealModMobEffects.PRE_HEAL.get()).getDuration() : 0) > 5) {
 			return false;
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
