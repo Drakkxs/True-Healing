@@ -194,7 +194,7 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
+            "name": "entityToCheck",
             "type": "entity"
           }
         ]
@@ -239,6 +239,195 @@
           }
         ]
       }
+    },
+    {
+      "name": "TrueHealGetConfig",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_config",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "file",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetConfigProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealSetupConfig",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_setup_config",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealSetupConfigProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetBlacklist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_blacklist",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "jsonarray",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetBlacklistProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetWhitelist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_whitelist",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "jsonarray",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetWhitelistProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingUseWhitelist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_use_whitelist",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingUseWhitelistProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingIgnoreList",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_ignore_list",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingIgnoreListProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealCheckBlacklist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_check_blacklist",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entityToCheck",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealCheckBlacklistProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealCheckWhitelist",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_check_whitelist",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entityToCheck",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealCheckWhitelistProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingTrueHealAmbient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_true_heal_ambient",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingTrueHealAmbientProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingTrueHealParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_true_heal_particles",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingTrueHealParticlesProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingPreHealAmbient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_pre_heal_ambient",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingPreHealAmbientProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
+    },
+    {
+      "name": "TrueHealGetSettingPreHealParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_get_setting_pre_heal_particles",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealGetSettingPreHealParticlesProcedure.java"
+        ]
+      },
+      "path": "~/ConfigIO"
     }
   ],
   "variable_elements": [],
@@ -271,7 +460,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "ConfigIO",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "trueheal",
