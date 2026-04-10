@@ -470,7 +470,7 @@
   "workspaceSettings": {
     "modid": "trueheal",
     "modName": "True Healing",
-    "version": "2.2.0-21.1.176",
+    "version": "2.21.1-21.1.176",
     "description": "Mobs heal after they\u0027re hurt using a custom potion effect.",
     "author": "Drakkxs, MCreator",
     "websiteURL": "https://github.com/Drakkxs/True-Healing",
