@@ -15,7 +15,7 @@ public class TrueHealEffectPreHealApplyProcedure {
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL.get(), (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0),
-						(int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALAMP)), 0), false, false));
+						(int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALAMP)), 0), TrueHealGetSettingPreHealAmbientProcedure.execute(), TrueHealGetSettingPreHealParticlesProcedure.execute()));
 			return true;
 		}
 		return false;
