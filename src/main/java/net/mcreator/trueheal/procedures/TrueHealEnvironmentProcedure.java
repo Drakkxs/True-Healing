@@ -39,7 +39,8 @@ public class TrueHealEnvironmentProcedure {
 		}
 		if (TrueHealEntityValidationProcedure.execute(entity)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL, (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, true, true));
+				_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.PRE_HEAL, (int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), 0, TrueHealGetSettingPreHealAmbientProcedure.execute(),
+						TrueHealGetSettingPreHealParticlesProcedure.execute()));
 		}
 	}
 }
