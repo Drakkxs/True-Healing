@@ -36,26 +36,26 @@ public class TrueHealSetupConfigProcedure {
 			} catch (IOException exception) {
 				exception.printStackTrace();
 			}
-		}
-		mainObj.add("settings", subObj);
-		subObj.addProperty("use_whitelist", false);
-		subObj.addProperty("ignore_list", false);
-		subObj.addProperty("preheal_ambient", false);
-		subObj.addProperty("preheal_particles", false);
-		subObj.addProperty("trueheal_ambient", true);
-		subObj.addProperty("trueheal_particles", true);
-		mainObj.add("blacklist", blacklist);
-		mainObj.add("whitelist", whitelist);
-		blacklist.add("minecraft:player");
-		blacklist.add("minecraft:creeper");
-		{
-			com.google.gson.Gson mainGSONBuilderVariable = new com.google.gson.GsonBuilder().setPrettyPrinting().create();
-			try {
-				FileWriter fileWriter = new FileWriter(truehealconfig);
-				fileWriter.write(mainGSONBuilderVariable.toJson(mainObj));
-				fileWriter.close();
-			} catch (IOException exception) {
-				exception.printStackTrace();
+			mainObj.add("settings", subObj);
+			subObj.addProperty("use_whitelist", false);
+			subObj.addProperty("ignore_list", false);
+			subObj.addProperty("preheal_ambient", false);
+			subObj.addProperty("preheal_particles", false);
+			subObj.addProperty("trueheal_ambient", true);
+			subObj.addProperty("trueheal_particles", true);
+			mainObj.add("blacklist", blacklist);
+			mainObj.add("whitelist", whitelist);
+			blacklist.add("minecraft:player");
+			blacklist.add("minecraft:creeper");
+			{
+				com.google.gson.Gson mainGSONBuilderVariable = new com.google.gson.GsonBuilder().setPrettyPrinting().create();
+				try {
+					FileWriter fileWriter = new FileWriter(truehealconfig);
+					fileWriter.write(mainGSONBuilderVariable.toJson(mainObj));
+					fileWriter.close();
+				} catch (IOException exception) {
+					exception.printStackTrace();
+				}
 			}
 		}
 	}
