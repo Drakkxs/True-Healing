@@ -19,10 +19,10 @@ public class TrueHealCheckWhitelistProcedure {
 		boolean ignore_list = false;
 		boolean match = false;
 		double i = 0;
-		whitelist = TrueHealGetBlacklistProcedure.execute();
+		whitelist = TrueHealGetWhitelistProcedure.execute();
 		for (int index0 = 0; index0 < (int) whitelist.size(); index0++) {
 			if ((ForgeRegistries.ENTITY_TYPES.getKey(entityToCheck.getType()).toString()).equals(whitelist.get((int) i).getAsString())) {
-				match = false;
+				match = true;
 				break;
 			}
 			i = i + 1;

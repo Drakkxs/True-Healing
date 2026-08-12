@@ -26,7 +26,7 @@ public class TrueHealGetSettingIgnoreListProcedure {
 				bufferedReader.close();
 				mainObj = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 				subObj = mainObj.get("settings").getAsJsonObject();
-				ignore_list = subObj.get("use_whitelist").getAsBoolean();
+				ignore_list = subObj.get("ignore_list").getAsBoolean();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

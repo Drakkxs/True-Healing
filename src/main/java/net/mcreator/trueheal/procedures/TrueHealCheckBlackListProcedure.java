@@ -22,7 +22,7 @@ public class TrueHealCheckBlackListProcedure {
 		blacklist = TrueHealGetBlacklistProcedure.execute();
 		for (int index0 = 0; index0 < (int) blacklist.size(); index0++) {
 			if ((ForgeRegistries.ENTITY_TYPES.getKey(entityToCheck.getType()).toString()).equals(blacklist.get((int) i).getAsString())) {
-				match = false;
+				match = true;
 				break;
 			}
 			i = i + 1;
