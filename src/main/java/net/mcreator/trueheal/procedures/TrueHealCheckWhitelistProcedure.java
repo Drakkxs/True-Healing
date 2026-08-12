@@ -20,7 +20,7 @@ public class TrueHealCheckWhitelistProcedure {
 		boolean match = false;
 		whitelist = TrueHealGetWhitelistProcedure.execute();
 		for (int index0 = 0; index0 < (int) whitelist.size(); index0++) {
-			if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityToCheck.getType()).toString()).equals(blacklist.get((int) i).getAsString())) {
+			if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityToCheck.getType()).toString()).equals(whitelist.get((int) i).getAsString())) {
 				match = true;
 				break;
 			}

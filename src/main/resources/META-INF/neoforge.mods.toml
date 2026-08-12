@@ -4,7 +4,7 @@ license="Public Domain"
 
 [[mods]]
 modId="trueheal"
-version="3.21.121.1.176"
+version="4.21.121.1.176"
 displayName="True Healing"
 updateJSONURL="https://github.com/Drakkxs/True-Healing/blob/097f6a3a6e74bb36b877ec9311811a6371045d74/update.json"
 displayURL="https://github.com/Drakkxs/True-Healing"
